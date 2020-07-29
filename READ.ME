@@ -1,0 +1,8 @@
+# build image from Dockerfile
+docker build -t fibonacci:{version} .
+
+# run image in the container
+docker run -it --rm (-d) fibonacci:{version} /bin/sh
+
+# -d - detached
+# --rm remove after exit (doesn't work w -d)
